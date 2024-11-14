@@ -1,0 +1,18 @@
+// Mixin
+@use '../../../_variable.scss' as *;
+@use '../../../_mixin.scss' as *;
+
+#projectoHomePage{
+    margin-top: 1rem;
+
+    #mainProjecto{
+        width: 100%;
+        @include flexFuction(flex-start,flex-start,"","","");
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: flex-start; 
+        padding: 0px 5%;
+        overflow: hidden;
+        // background-color: rgb(98, 118, 13);
+    }
+}

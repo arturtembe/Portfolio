@@ -1,0 +1,51 @@
+// Mixin
+@use '../_variable.scss' as *;
+@use '../_mixin.scss' as *;
+
+
+/*=============== FOOTER ===============*/
+#footerPage{
+    width: 100%;
+    @include flexFuction(center,center,1rem,"","");
+    padding: 1rem;
+    width: 100%;
+    padding-block: 2rem;
+    box-shadow: 4px 4px 4px 4px $body-color-hsl;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $dark-color-hsl;
+
+    .footer__container_Home{
+        row-gap: 2rem;
+    }
+    
+    .footer__copy_Home{
+        color: $white-color;
+        @include transitionMixin(color .4s);
+    }
+}
+
+/* ========== MEDIA ========= */
+@media screen and (max-width:340px) { 
+    .footer__copy_Home{
+        grid-column: 1;
+        -ms-grid-column: 1;
+    }
+}
+@media screen and (min-width: 768px) { 
+    .footer__copy_Home{
+        grid-column: initial;
+        -ms-grid-column: initial;
+    }
+}
+/* For large devices */
+@media screen and (min-width: 1150px) { 
+    .footer_Home{
+        padding-block: 5rem 3rem;
+    }
+    
+    .footer__container_Home{
+        row-gap: 3rem;
+    }
+}

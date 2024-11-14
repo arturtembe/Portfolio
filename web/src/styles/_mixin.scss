@@ -1,0 +1,129 @@
+@mixin boxSizeFuction($borderSize){
+    box-sizing: $borderSize;
+    -webkit-box-sizing: $borderSize;
+    -moz-box-sizing: $borderSize;
+    -ms-box-sizing: $borderSize;
+    -o-box-sizing: $borderSize;
+}
+@mixin objectFitFuction($objectFit){
+    object-fit: $objectFit;
+    -webkit-object-fit: $objectFit;
+    -moz-object-fit: $objectFit;
+    -ms-object-fit: $objectFit;
+    -o-object-fit: $objectFit;
+} 
+@mixin flexDirection($direction){
+    @if $direction {
+        flex-direction: $direction;
+        -ms-flex-direction: $direction;
+    }
+}
+@mixin displayMixin($display){
+    @if $display {
+        display: $display;
+    }
+}
+
+@mixin flexFuction($content,$items,$gap,$direction,$wrap){
+    display: flex; 
+    @if $content { justify-content: $content; }
+    @if $items { align-items: $items; }
+    @if $gap { gap: $gap; }
+    @if $direction {
+        flex-direction: $direction;
+        -ms-flex-direction: $direction;
+    }
+    @if wrap {
+        flex-wrap: $wrap;
+        -ms-flex-wrap: $wrap;
+    }
+}
+
+@mixin columnGap($gap){
+    @if $gap {
+        column-gap: $gap;
+        -webkit-column-gap: $gap;
+        -moz-column-gap: $gap;
+        -o-column-gap: $gap;
+    }
+}
+@mixin transitionMixin($transition){
+    @if $transition {
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -o-transition: $transition;
+        -ms-transition: $transition;
+    }
+}
+@mixin filterMixin($value){
+    @if $value {
+        filter: $value;
+        -webkit-filter: $value;
+        -moz-filter: $value;
+        -o-filter: $value;
+        -ms-filter: $value;
+    }
+}
+@mixin transformMixin($value){
+    @if $value {
+        transform: $value;
+        -webkit-transform: $value;
+        -moz-transform: $value;
+        -o-transform: $value;
+        -ms-transform: $value;
+    }
+}
+@mixin gridMixin($width, $gap){
+    display: grid;
+    @if $width {
+        grid-template-columns: repeat(auto-fill, minmax($width,1fr));
+    }
+    @if $gap {
+        gap: $gap;
+    }
+}
+@mixin transformOriginMixin($transformOrigin){
+    transform-origin: $transformOrigin;
+    -webkit-transform-origin: $transformOrigin;
+    -ms-transform-origin: $transformOrigin;
+    -moz-transform-origin: $transformOrigin;
+    -o-transform-origin: $transformOrigin;
+}
+@mixin boxSizingMixin($boxSizing){
+    box-sizing: $boxSizing;
+    -webkit-box-sizing: $boxSizing;
+    -ms-box-sizing: $boxSizing;
+    -moz-box-sizing: $boxSizing;
+    -o-box-sizing: $boxSizing;
+}
+@mixin animationMixin($animation){
+    animation: $animation;
+    -webkit-animation: $animation;
+    -ms-animation: $animation;
+    -moz-animation: $animation;
+    -o-animation: $animation;
+}
+@mixin animationDelay($animation){
+    animation-delay: $animation;
+    -webkit-animation-delay: $animation;
+    -ms-animation-delay: $animation;
+    -moz-animation-delay: $animation;
+    -o-animation-delay: $animation;
+}
+@mixin animationTimingFunction($animation){
+    animation-timing-function: $animation;
+    -webkit-animation-timing-function: $animation;
+    -ms-animation-timing-function: $animation;
+    -moz-animation-timing-function: $animation;
+    -o-animation-timing-function: $animation;
+}
+@mixin objectFitMixin($value){
+    @if $value {
+        object-fit: $value;
+        -webkit-object-fit: $value;
+        -moz-object-fit: $value;
+        -o-object-fit: $value;
+        -ms-object-fit: $value;
+    }
+}

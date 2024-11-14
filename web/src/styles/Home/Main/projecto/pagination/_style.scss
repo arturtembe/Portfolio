@@ -1,0 +1,19 @@
+// Mixin
+@use '../../../../_variable.scss' as *;
+@use '../../../../_mixin.scss' as *;
+
+#paginationSwipper{
+    width: 100%;
+    @include flexFuction(center,center,1rem,"","");
+
+    button{
+        background-color: $first-color;
+        border-radius: 0.8rem;
+        padding: 1rem 2rem;
+        box-shadow: $shadow-button;
+
+        &:hover {
+            background-color: $second-color;
+        }
+    }
+}

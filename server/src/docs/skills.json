@@ -1,0 +1,202 @@
+[
+    {
+        "id": 25,
+        "tecnologia": "Jquery",
+        "slug": "jquery",
+        "destaque": false,
+        "created_at": "2024-11-12 14:13:16",
+        "updated_at": "2024-11-12 14:13:16"
+    },
+    {
+        "id": 24,
+        "tecnologia": "Bootstrap",
+        "slug": "bootstrap",
+        "destaque": false,
+        "created_at": "2024-11-12 14:13:09",
+        "updated_at": "2024-11-12 14:13:09"
+    },
+    {
+        "id": 23,
+        "tecnologia": "Tailwind",
+        "slug": "tailwind",
+        "destaque": false,
+        "created_at": "2024-11-12 14:12:45",
+        "updated_at": "2024-11-12 14:12:45"
+    },
+    {
+        "id": 22,
+        "tecnologia": "Sass",
+        "slug": "sass",
+        "destaque": false,
+        "created_at": "2024-11-12 14:11:06",
+        "updated_at": "2024-11-12 14:11:06"
+    },
+    {
+        "id": 21,
+        "tecnologia": "Sqlite",
+        "slug": "sqlite",
+        "destaque": false,
+        "created_at": "2024-11-12 14:10:31",
+        "updated_at": "2024-11-12 14:10:31"
+    },
+    {
+        "id": 20,
+        "tecnologia": "Postgres",
+        "slug": "postgres",
+        "destaque": false,
+        "created_at": "2024-11-12 14:10:23",
+        "updated_at": "2024-11-12 14:10:23"
+    },
+    {
+        "id": 19,
+        "tecnologia": "Mongodb",
+        "slug": "mongodb",
+        "destaque": false,
+        "created_at": "2024-11-12 14:10:10",
+        "updated_at": "2024-11-12 14:10:10"
+    },
+    {
+        "id": 18,
+        "tecnologia": "Mysql",
+        "slug": "mysql",
+        "destaque": false,
+        "created_at": "2024-11-12 14:09:46",
+        "updated_at": "2024-11-12 14:09:46"
+    },
+    {
+        "id": 17,
+        "tecnologia": "Java",
+        "slug": "java",
+        "destaque": true,
+        "created_at": "2024-11-12 14:08:42",
+        "updated_at": "2024-11-12 15:50:47"
+    },
+    {
+        "id": 16,
+        "tecnologia": "Prisma",
+        "slug": "prisma",
+        "destaque": false,
+        "created_at": "2024-11-12 14:08:31",
+        "updated_at": "2024-11-12 14:08:31"
+    },
+    {
+        "id": 15,
+        "tecnologia": "REACT NATIVE",
+        "slug": "react-native",
+        "destaque": true,
+        "created_at": "2024-11-06 20:32:51",
+        "updated_at": "2024-11-06 21:01:04"
+    },
+    {
+        "id": 14,
+        "tecnologia": "FASTIFY",
+        "slug": "fastify",
+        "destaque": true,
+        "created_at": "2024-11-06 20:32:29",
+        "updated_at": "2024-11-06 20:32:29"
+    },
+    {
+        "id": 13,
+        "tecnologia": "NEST",
+        "slug": "nest",
+        "destaque": true,
+        "created_at": "2024-11-06 20:31:12",
+        "updated_at": "2024-11-06 20:31:12"
+    },
+    {
+        "id": 12,
+        "tecnologia": "VUE",
+        "slug": "vue",
+        "destaque": true,
+        "created_at": "2024-11-06 20:30:50",
+        "updated_at": "2024-11-06 20:30:50"
+    },
+    {
+        "id": 11,
+        "tecnologia": "LARAVEL",
+        "slug": "laravel",
+        "destaque": true,
+        "created_at": "2024-11-06 20:30:46",
+        "updated_at": "2024-11-06 20:30:46"
+    },
+    {
+        "id": 10,
+        "tecnologia": "PHP",
+        "slug": "php",
+        "destaque": true,
+        "created_at": "2024-11-06 20:27:58",
+        "updated_at": "2024-11-12 15:51:00"
+    },
+    {
+        "id": 9,
+        "tecnologia": "NODE",
+        "slug": "node",
+        "destaque": true,
+        "created_at": "2024-11-06 20:27:43",
+        "updated_at": "2024-11-06 20:27:43"
+    },
+    {
+        "id": 8,
+        "tecnologia": "NEXT",
+        "slug": "next",
+        "destaque": true,
+        "created_at": "2024-11-06 20:27:32",
+        "updated_at": "2024-11-06 20:27:32"
+    },
+    {
+        "id": 7,
+        "tecnologia": "ANGULAR",
+        "slug": "angular",
+        "destaque": true,
+        "created_at": "2024-11-06 20:27:15",
+        "updated_at": "2024-11-06 20:27:15"
+    },
+    {
+        "id": 6,
+        "tecnologia": "REACT",
+        "slug": "react",
+        "destaque": true,
+        "created_at": "2024-11-06 20:26:51",
+        "updated_at": "2024-11-06 20:26:51"
+    },
+    {
+        "id": 5,
+        "tecnologia": "TYPESCRIPT",
+        "slug": "typescript",
+        "destaque": true,
+        "created_at": "2024-11-04 19:17:24",
+        "updated_at": "2024-11-04 19:24:26"
+    },
+    {
+        "id": 4,
+        "tecnologia": "JAVASCRIPT",
+        "slug": "javascript",
+        "destaque": false,
+        "created_at": "2024-11-04 14:43:59",
+        "updated_at": "2024-11-04 14:43:59"
+    },
+    {
+        "id": 3,
+        "tecnologia": "Materialize",
+        "slug": "materialize",
+        "destaque": false,
+        "created_at": "2024-11-04 14:29:16",
+        "updated_at": "2024-11-12 15:54:20"
+    },
+    {
+        "id": 2,
+        "tecnologia": "CSS",
+        "slug": "css",
+        "destaque": false,
+        "created_at": "2024-11-04 14:29:15",
+        "updated_at": "2024-11-04 19:13:30"
+    },
+    {
+        "id": 1,
+        "tecnologia": "HTML",
+        "slug": "html",
+        "destaque": false,
+        "created_at": "2024-11-04 14:10:38",
+        "updated_at": "2024-11-04 19:13:00"
+    }
+]

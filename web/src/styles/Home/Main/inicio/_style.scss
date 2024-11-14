@@ -1,0 +1,117 @@
+// Mixin
+@use '../../../_variable.scss' as *;
+@use '../../../_mixin.scss' as *;
+
+#inicioHomePage{
+    padding: 10rem 5rem;
+
+    .home__container{
+        width: 80%;
+        // border: 1px solid $red_color_B51;
+        @include flexFuction("","",10px,column,"");
+        color: $white-color;
+        padding: 1rem 2rem;
+
+        .home__title{
+            font: {
+                size: 4.5rem;
+                weight: 700;
+            };
+        }
+        .home__description{
+            &:nth-child(1){
+                margin-top: 5rem;
+            }
+
+            font: {
+                size: 1.5rem;
+                weight: 200;
+            };
+            line: {
+                height: 26px;
+            }
+
+            a{
+                color: $second-color;
+                font-size: inherit;
+                font: {
+                    size: 1.7rem;
+                    weight: 600;
+                };
+            }
+        }
+        .home__buttons{
+            @include flexFuction(flex-start,center,10px,"","");
+            @include columnGap(1rem);
+            margin-top: 2rem;
+
+            a{
+                width: 10rem;
+                text-align: center;
+                background-color: transparent;
+                box-shadow: none;
+                border: 1px solid $white-color;
+                padding: .5rem 2rem;
+                border-radius: 4rem;
+                box-shadow: inset;
+                position: relative;
+                .home__icon{
+                    color: $white-color;
+                }
+
+                &:hover{
+                    .home__icon{
+                        color: $second-color;
+                    }
+                    border: 1px solid $second-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #inicioHomePage{
+        // background-color: aqua;
+        padding: 10rem 1rem;
+
+        .home__container{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    #inicioHomePage{
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #inicioHomePage{
+
+        .home__container{
+            .home__title{
+                font: {
+                    size: 2.5rem;
+                };
+            }
+            .home__description{
+    
+                font: {
+                    size: 1.1rem;
+                    //weight: 200;
+                };
+                line: {
+                    //height: 26px;
+                }
+    
+                a{
+                    font: {
+                        //size: 1.7rem;
+                        //weight: 600;
+                    };
+                }
+            }
+        }
+    }
+}

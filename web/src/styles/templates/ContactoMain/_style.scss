@@ -1,0 +1,190 @@
+// Mixin
+@use '../../_variable.scss' as *;
+@use '../../_mixin.scss' as *;
+
+#mainContacto{ 
+    width: 100%;
+    padding: 7rem 5%;
+    @include flexFuction(center,center,2rem,"","");
+
+    .contact_findme {
+        width: 100%;
+        box-shadow: 4px 4px 3px 4px #020e1a;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        margin-top: 50px;
+        overflow-y: hidden;
+        margin: 30px 0px;
+        background-color: $color-green-black;
+    
+        & h4{
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            width: 100%;
+            padding: 20px 0;
+            word-wrap: break-word;
+        }
+        & p{
+            text-align: center;
+            padding: 10px 20px;
+            color: #fff;
+            width: 100%;
+            word-wrap: break-word;
+        }
+    }
+
+    .contact_form{
+        width: 100%;
+
+        .form{
+            max-width: 100%;
+            /* padding: 10px 0 50px 0; */
+            background-color: $color-green-black; 
+            padding: 10px 25px;
+            box-shadow: 4px 4px 3px 4px #020e1a;
+            border-radius: 10px;
+            margin: 20px 5px 0 5px;
+
+            .form_box_input {
+                padding: 0 10px 10px 10px;
+                width: 100%;
+                position: relative;
+
+                h1 {
+                    width: 100%;
+                    padding: 0px 20px;
+                    font-size: 52px;
+                    text-align: center;
+                    color: #fff;
+                }
+                .msg {
+                    display: block;
+                    padding: 10px;
+                    font-size: 17px;
+                    color: #fff;
+                    border-radius: 0;
+                    font-weight: bold;
+                }
+                
+                .msg.error {
+                    background-color: rgb(248, 140, 140);
+                    //width: 100%;
+                    //background-color: #f00;
+                }
+                .msg.sucesso {
+                    background-color: rgb(129, 165, 250);
+                    // width: 100%;
+                    // background-color: rgb(98, 184, 245);
+                }
+                label {
+                    display: none;
+                    width: 100%;
+                    padding: 10px 0;
+                    font-size: 24px;
+                    color: #fff;
+                }
+                input {
+                    width: 100%;
+                    padding: 15px 10px;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    border: 1px solid #ddd;
+                    outline: none;
+                    background-color: $color-blue-darken;
+                    color: $white-color;
+                }
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    border: 1px solid #ddd;
+                    outline: none;
+                    height: 120px;
+                    background-color: #081b29;
+                    color: #fff;
+                }
+                button {
+                    position: relative;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    background: #081b29;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    font-size: 19px;
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    z-index: 1;
+                    overflow: hidden;
+                    -webkit-transition: 0.5s;
+                    -o-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    transition: 0.5s;
+                    padding: 15px 0;
+                    outline: none;
+
+                    &:nth-child(2) {
+                        margin-top: 10px;
+                    }
+                    &:nth-child(2).active {
+                        display: none;
+                    }
+                    &:hover {
+                        color: #fff;
+                        cursor: pointer;
+                        border: 1px solid #00abf0;
+                    }
+                    &:nth-child(1):before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        background: $first-color-darken;
+                        z-index: -1;
+                        -webkit-transition: 0.5s;
+                        -o-transition: 0.5s;
+                        -moz-transition: 0.5s;
+                        transition: 0.5s;
+                    }
+                    &:nth-child(2):before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        background: #f00;
+                        z-index: -1;
+                    
+                        -webkit-transition: 0.5s;
+                        -o-transition: 0.5s;
+                        -moz-transition: 0.5s;
+                        transition: 0.5s;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ======= MEDIA ========= */
+@media screen and (max-width: 800px) {
+    #mainContacto{ 
+        @include flexFuction(center,center,2rem,"",wrap);
+    }
+}

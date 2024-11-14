@@ -1,0 +1,53 @@
+// Mixin
+@use '../../../_variable.scss' as *;
+@use '../../../_mixin.scss' as *;
+
+#habilidade__card{
+    position: relative;
+    background-color: $color-green-black;
+    padding: 12.5rem 1.25rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: inset $shadow-card;
+    z-index: 10;
+
+    .habilidade__img{
+        position: absolute;
+        top: -4rem;
+        left: 0;
+        right: 0;
+        width: 100px;
+        margin: 0 auto;
+        @include filterMixin($shadow-img);
+        @include transitionMixin(transform .4s);
+    }
+    
+    .habilidade__title{
+        font: {
+            weight: $font-regular;
+            size: $h2-font-size;//
+            family: $second-font;
+        };
+        color: $white-color;
+        margin-bottom: .5rem;
+    }
+    
+    .habilidade__button{
+        position: absolute;
+        right: 1.5rem;
+        bottom: 2.5rem;
+        outline: none;
+        border: none;
+        background-color: $second-color;
+        padding: 4px;
+        border-radius: .25rem;
+        font-size: 1.25rem;
+        color: $second-color-dark;
+        box-shadow: $shadow-button;
+        display: inline-flex;
+        cursor: pointer;
+    }
+    
+    &:hover .habilidade__img{
+        @include transformMixin(translateY(-.5rem));
+    }
+}

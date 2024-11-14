@@ -1,0 +1,9 @@
+// Mixin
+@use '../../_variable.scss' as *;
+@use '../../_mixin.scss' as *;
+
+#mainProjecto{ 
+    width: 100%;
+    padding: 7rem 5%;
+    @include gridMixin(25rem, 2rem);
+}

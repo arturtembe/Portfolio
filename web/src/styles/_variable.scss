@@ -1,0 +1,101 @@
+// Color
+$black_color: #000000; 
+$black_color_40: #000040;
+$red_color_B51: #DB2B51;
+//$white_color: #ffffff;
+$white_color_DADA: #dadada;
+$white_color_D9D9: #d9d9d9;
+$blue_color: #0000ff;
+$brown_color_4A4B: #4A4B52;
+$brown_color_999: #999999; 
+
+$first-color: hsl(214, 35%, 19%);
+$first-color-dark: hsl(170, 100%, 28%);
+$first-color-darken: hsl(170, 100%, 23%);
+$second-color: hsl(45, 100%, 52%);
+$second-color-dark: hsl(45, 100%, 20%);
+$white-color: hsl(0, 0%, 100%);
+$shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, .4));
+$shadow-circle: 0 12px 24px hsla(0, 0%, 0%, .4);
+$shadow-button: 0 -4px 8px hsla(0, 0%, 0%, .3);
+$shadow-card: 0 -8px 24px hsla(0, 0%, 0%, .3);
+$shadow-text: 0 2px 4px var($first-color-darken);
+
+$background-color1: #fafaff;
+$background-color2: #ffffff;
+$background-color3: #ededed;
+$background-color4: #cad7fda4;
+$primary-color: #4b49ac;
+$secondary-color: #0c007d;
+$Border-color: #3f0097;
+$one-use-color: #3f0097;
+$two-use-color: #5500cb;
+
+$color-red:#f00;
+$color-red-ligth:rgb(238, 52, 52);
+$color-red-ligth-white:rgb(251, 182, 182);
+$color-black:#000;
+$color-green-black:#15263b;
+$color-blue-darken:#081b29;
+$color-green-black-white:#8396ac;
+$color-green:#30e8d5;
+$color-green-white:#a4f3eb;
+$color-blue-ligth:#3c94fa;
+$color-blue-ligth-white:#84bdfe;
+
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+$yellow-color: hsl(38, 92%, 58%);
+$yellow-color-light: hsl(38, 100%, 78%);
+$yellow-color-alt: hsl(32, 75%, 50%);
+$second-color-hsl: hsl(195, 75%, 52%);
+$dark-color-hsl: hsl(212, 40%, 12%);
+$white-color-hsl: hsl(212, 4%, 95%);
+$body-color-hsl: hsl(212, 42%, 15%);
+$container-color: hsl(212, 42%, 20%);
+
+$light: #f6f6f9;
+$primary: #1976D2;
+$light-primary: #CFE8FF;
+$grey: #eee;
+$dark-grey: #AAAAAA;
+$dark: #363949;
+$danger: #D32F2F;
+$light-danger: #FECDD3;
+$warning: #FBC02D;
+$light-warning: #FFF2C6;
+$success: #388E3C;
+$light-success: #BBF7D0;
+
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+$body-font-hsl: "Bai Jamjuree", sans-serif;
+$h2-font-size-hsl: 1.25rem;
+$normal-font-size-hsl: 1rem;
+
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+$body-font: "Poppins", sans-serif;
+$second-font: "Titan One", sans-serif;
+$biggest-font-size: 3.5rem;
+$h11-font-size: 2rem;
+$h1-font-size: 2.75rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 1rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+
+/*========== Font weight ==========*/
+$font-regular: 400;
+$font-semi-bold: 600;
+
+/*========== z index ==========*/
+$z-tooltip: 10;
+$z-fixed: 100;
+
+$width-form: 600px;
+$padding-form: 0;
+
+$bg: #313942;
+$ghost: #528cce;
+$heading: #e7ebf2;

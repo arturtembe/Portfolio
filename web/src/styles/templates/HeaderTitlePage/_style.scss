@@ -1,0 +1,51 @@
+// Mixin
+@use '../../_variable.scss' as *;
+@use '../../_mixin.scss' as *;
+
+#headerTitlePage{
+    margin: 5rem 5% 1rem 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    @include flexFuction(space-between,center,"","","");
+
+    h1{
+        color: $white-color;
+        font: {
+            size: 4.8rem;
+            weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #headerTitlePage{
+        margin-top: 2rem;
+
+        h1{
+            font: {
+                size: 3.8rem;
+            }
+        }
+        .search-bar {
+            max-width: 100%;
+        }
+
+        &:has(
+            .search-bar input:focus,
+            .search-bar input:valid
+        ){
+            h1{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    #headerTitlePage{
+        h1{
+            font: {
+                size: 3.4rem;
+            }
+        }
+    }
+}

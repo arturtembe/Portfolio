@@ -1,0 +1,124 @@
+// Mixin
+@use '../../../../_variable.scss' as *;
+@use '../../../../_mixin.scss' as *;
+
+#projecto_card_section {
+    width: 30rem;
+    @include flexFuction("","","",column,"");
+    background-color: #081b29;
+    cursor: pointer;
+    @include transitionMixin(all 0.3s ease 0s);
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.4rem 0.3rem 0.4rem #020e1a;
+    padding: 0 0 1rem 0;
+
+    &:hover {
+        @include transformMixin(translateY(-0.7rem));
+    }
+
+    // Image
+    .projecto_card_section_image {
+        width: 100%;
+        padding-top: 56.25%;
+        overflow: hidden;
+        position: relative;
+        height: 30rem;
+
+        .projecto_card_img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transformMixin(translate(-50%, -50%));
+            @include objectFitMixin(fill);
+        }
+    }
+
+    /* ============== HABILIDADE ============= */
+    .projecto_card_section_habilidade{
+        padding: 10px;
+        text-align: center;
+
+        .projecto_habilidade_texto{
+            font-size: 14px;
+            font-weight: 400;
+            color: $second-color;
+    
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-height: 26px;
+            max-height: 80px;
+            line-clamp: 1;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    // Title
+    .projecto_card_section_content {
+        @include flexFuction(center,flex-end,"","","");
+        padding: 2rem 2rem 0rem 2rem;
+
+        .projecto_card_section_content_title {
+            margin-bottom: 2rem;
+            color: $white-color;
+            text-align: center;
+            font-size: 1.9rem;
+        
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-height: 2.6rem;
+            max-height: 8rem;
+            line-clamp: 1;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    /* ============== CONTROLS ============= */
+    .projecto_card_section_github_link {
+        @include flexFuction(center,center,1rem,"","");
+        padding: 2rem;
+
+        .proj_github_link_btn{
+            padding: 1rem 2rem;
+            font-size: 1.9rem;
+            border-radius: 1rem;
+            color: $white-color;
+            border: 0.1rem solid $white-color;
+    
+            &:hover{
+                color: $second-color;
+                border: 0.1rem solid $second-color;
+            }
+        }
+    }
+
+    // Type
+    .card_type_link {
+        padding: 2rem 2rem 4rem 2rem;
+        @include flexFuction(center,center,1rem,"","");
+
+        span{
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 1rem;
+            color: $white-color;
+            border: 0.1rem solid $white-color;
+        
+            &:hover{
+                color: $second-color;
+                border: 0.1rem solid $second-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .projecto_card_section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+// Mixin
+@use '../../_variable.scss' as *;
+@use '../../_mixin.scss' as *;
+
+#headerTitleHome{
+    margin-top: 3rem;
+
+    h1{
+        text-align: center;
+        color: $white-color;
+        font: {
+            size: 4.8rem;
+            weight: 700;
+        }
+    }
+    
+}
